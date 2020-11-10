@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-ifeq ($(BOARD_USES_QCOM_HARDWARE), true)
-TARGET_COMPILE_WITH_MSM_KERNEL := true
-endif
+LOCAL_PATH := $(call my-dir)
 
+include $(call all-makefiles-under,$(LOCAL_PATH))
