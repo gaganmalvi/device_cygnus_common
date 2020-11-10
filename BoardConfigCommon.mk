@@ -13,3 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+DEVICE_PATH := device/cygnus/common
+
+ifeq ($(BOARD_USES_QCOM_HARDWARE), true)
+TARGET_COMPILE_WITH_MSM_KERNEL := true
+endif
