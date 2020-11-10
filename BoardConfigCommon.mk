@@ -16,6 +16,9 @@
 
 DEVICE_PATH := device/cygnus/common
 
-ifeq ($(BOARD_USES_QCOM_HARDWARE), true)
 TARGET_COMPILE_WITH_MSM_KERNEL := true
-endif
+
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
+
+
+

@@ -13,3 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+# Inherit Common BoardConfig
+$(call inherit-product device/cygnus/common/BoardConfigCommon.mk)
